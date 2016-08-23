@@ -1,0 +1,22 @@
+//demo html recreated
+<body>
+ <div class = "container">
+ <header>
+ 	<h1> Chat App <h1>
+ </header>
+
+ 		<ul>
+ 		 {{#each recentMessages}}
+ 			<li>
+ 			<div class = "username"> {{#username}}</div>
+ 			<div class = "messages"> {{text}} </div>
+ 			<li>
+ 			{{/each}}
+<ul>
+<footer>
+ <form class = "Compose message">
+ <input type = "text" name = "text" placeholder = "Add message">
+ </form>
+ <footer>
+ 
+

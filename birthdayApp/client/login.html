@@ -1,0 +1,50 @@
+<template name="login">
+    <h2>Login</h2>
+    <form class="login">
+        <p>Email: <input type="email" name="email" placeholder="Enter email" /> </p>
+        <p>Password: <input type="password" name="password" placeholder="Enter password"></p>
+        <p><input type="submit" value="Login"></p>
+    </form>
+    <a href="Sign Up">Sign up to create an account</a>
+</template>
+<template name="signup">
+	<h2>SignUp</h2>
+	<form class="login">
+        <p>Email: <input type="email" name="email" placeholder="Enter email" /> </p>
+        <p>Password: <input type="password" name="password" placeholder="Enter password"></p>
+        <p>Confirm: <input type="password" name="confirmPassword" placeholder="Confirm Password"></p>
+        <p><input type="submit" value="Login"></p>
+    </form>
+</template>
+<template name="registeredBirthdays">
+<input type="submit" value="Add Employee Birthday Information" />
+<ul>{{#each birthdayList}}
+    <li>
+        <div class="First Name">{{fname}}</div>
+        <div class="Last Name">{{lname}}</div>
+        <div class="Email">{{email}}</div>
+        <div class="Birthday date">{{bdate}}</div>
+    </li>
+</ul>
+{{/each}}
+<input type="submit" value="Edit" />
+<input type="submit" value="Sign out" />
+</form>
+</template>
+<template name="addBirthday">
+            <form class="Add">
+                <input type="text" name="firstName" placeholder="Enter Firstname"/>
+                <br>
+                <input type="text" name="lastName" placeholder="Enter Lastname" />
+                <br>
+                <input type="text" name="Email" placeholder="Enter email" />
+                <br>
+                <input type="date" name="BirthdayDate" placeholder="Enter Birthday date" />
+                <br>
+                <input type="text" name="comments" placeholder="Remarks and Comments" />
+                <br>
+                <input type="submit" value="Done" />
+                
+            </form>
+        </div>
+</template>
